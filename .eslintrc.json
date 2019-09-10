@@ -1,0 +1,27 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "2018"
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "react/prop-types": [
+      "off"
+    ]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
+  }
+}

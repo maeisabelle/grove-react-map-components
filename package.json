@@ -1,0 +1,93 @@
+{
+  "name": "@marklogic-community/grove-react-map-components",
+  "version": "1.0.0",
+  "description": "React map component library for apps backed by MarkLogic",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "src",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "npm run lint && nwb build-react-component --copy-files",
+    "buildStorybook": "build-storybook -c .storybook -o .storybook/dist",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start": "nwb serve-react-demo",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "npm run lint && nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "npm run lint && nwb test-react --server"
+  },
+  "dependencies": {
+    "bootstrap": ">=3.3.7 <4.0.0",
+    "codemirror": "^5.39.2",
+    "ol": "^5.3.3",
+    "prop-types": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
+    "react-codemirror2": "^5.1.0",
+    "react-json-tree": "^0.11.0",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
+    "vkbeautify": "^0.99.3"
+  },
+  "devDependencies": {
+    "@storybook/react": "^5.1.11",
+    "acorn": "^6.3.0",
+    "babel-eslint": "^10.0.3",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "eslint": "^5.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "inferno": "^5",
+    "nwb": "^0.23.0",
+    "prettier": "^1.13.7",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.1",
+    "react-test-renderer": "^16.0.0",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "author": "Mae Isabelle Turiana <maeisabelle.turiana@marklogic.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:marklogic-community/grove-react-map-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marklogic-community/grove-react-map-components/issues"
+  },
+  "keywords": [
+    "react-component-library",
+    "map",
+    "openlayers",
+    "MarkLogic"
+  ],
+  "contributors": [
+    {
+      "name": "Mae Isabelle Turiana",
+      "url": "https://github.com/maeisabelle"
+    },
+    {
+      "name": "Matt Pileggi",
+      "url": "https://github.com/withjam"
+    },
+    {
+      "name": "Marianne Myers",
+      "url": "https://github.com/mariannemyers"
+    },
+    {
+      "name": "Geert Josten",
+      "url": "https://github.com/grtjn"
+    }
+  ]
+}
